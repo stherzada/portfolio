@@ -127,10 +127,10 @@ nav i:hover{
 .conteudo{
   padding: 1.8rem;
   font-weight: 200;
+  font-size: 2rem;
 }
 
 .conteudo h2{
-  font-size: 60px;
   text-align: center;
   text-shadow: 1px 2px 3px white;
   margin:0;
@@ -208,7 +208,7 @@ figcaption{
   margin-top: 1rem;
 }
 
-.tags {
+.linguagens {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -221,14 +221,14 @@ figcaption{
   transition: all .3s ease-in-out;
 }
 
-figure:hover .tags{
+figure:hover .linguagens{
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
-.tags ul{
+.linguagens ul{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -237,14 +237,14 @@ figure:hover .tags{
   justify-content: center;
 }
  
-.tags p{
+.linguagens p{
   color: white;
   font-weight: 700;
   font-size: 20px;
   text-shadow: 1px 2px 20px white;
 }
 
-.tags ul li{
+.linguagens ul li{
   padding: 10px 20px;
   background-color: rgba(133, 60, 173);
   border: dashed 2px #fff;
@@ -314,6 +314,55 @@ figure:hover .tags{
   .card--projetos h2{
     font-size: 3rem;
   }
-
   
+  
+}
+@media (max-width: 768px){
+  .digna h1{
+    font-size: 3rem;
+  }
+  .digna h2{
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  #e1{
+    font-size: 2rem;
+  }
+  #e2{
+    
+    font-size: 1.5rem;
+  }
+
+  .border{
+    padding: 0;
+  }
+  .eu h2{
+    font-size: 2rem;
+  }
+  .eu p{
+    font-size: 1.2rem;
+  }
+  .descricao{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  .card--projetos h2{
+    font-size: 1.8rem;
+  }
+
+  figure img{
+    border-radius: 0px;
+  }
+  .linguagens{
+    border-radius: 0;
+  }
+
+  .contato{
+    width: 15rem; 
+    height: 3.5rem; 
+    margin: 0 auto;
+    position: unset;
+  }
 }

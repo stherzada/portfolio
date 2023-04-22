@@ -46,27 +46,52 @@ function segundoTexto(){
     }, timeLetras1);
 }
 
-document.addEventListener("scroll", function() {
-    var pageTop = window.pageYOffset || document.documentElement.scrollTop;
-    var pageBottom = pageTop + window.innerHeight;
-    var tags = document.querySelectorAll(".tag");
+// document.addEventListener("scroll", function() {
+//     var pageTop = window.pageYOffset || document.documentElement.scrollTop;
+//     var pageBottom = pageTop + window.innerHeight;
+//     var tags = document.querySelectorAll(".tag");
   
    
-    for (var i = 0; i < tags.length; i++) {
-      var tag = tags[i];
+//     for (var i = 0; i < tags.length; i++) {
+//       var tag = tags[i];
        
-      if (tag.getBoundingClientRect().top < pageBottom) {
-        tag.classList.add("visible");
-      } else {
-        tag.classList.remove("visible");
-      }
-    }
+//       if (tag.getBoundingClientRect().top < pageBottom) {
+//         tag.classList.add("visible");
+//       } else {
+//         tag.classList.remove("visible");
+//       }
+//     }
 
-    if(scrollY < 100)   {
-        tags[0].classList.remove("visible")
+//     if(scrollY < 100)   {
+//         tags[0].classList.remove("visible")
         
-    }
-  });
+//     }
+//   });
   
 
+document.addEventListener("scroll", function() {
+    var ids = ['about', 'projects']
+    var elements = new Array();
+
+    for (const id of ids) {
+        elements.push(document.getElementById(id));
+    }
+
+    for (let element of elements) {
+        const rect = element.getBoundingClientRect();
+
+        // Obtém a altura da janela
+        const windowHeight = window.innerHeight;
+
+        // Calcula a posição vertical central da janela
+        const windowCenter = windowHeight / 2;
+
+        if (rect.top <= windowCenter && rect.bottom >= windowCenter) {
+            element.classList.add("visible");
+        } else {
+            element.classList.remove("visible");
+        }
+    }
+
+});
 
