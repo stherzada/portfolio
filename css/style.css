@@ -1,9 +1,9 @@
-:root{
+:root {
   --cor1: #ded9e4;
-  --borda-animada1: #4A2D6E;
-  --borda-animada2: #5C4E6E;
-  --borda-animada3: #7E4CBA;
-  --borda-animada4: #CAAAF0;
+  --borda-animada1: #4a2d6e;
+  --borda-animada2: #5c4e6e;
+  --borda-animada3: #7e4cba;
+  --borda-animada4: #caaaf0;
 }
 
 @keyframes gradient {
@@ -23,82 +23,86 @@ html {
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
 }
- 
-body{
+
+body {
   font-size: 1rem;
-  background: linear-gradient(45deg, rgba(219,218,233,1) 0%, rgb(161, 98, 239) 45%, rgba(134,60,173,1) 100%); 
+  background: linear-gradient(
+    45deg,
+    rgba(219, 218, 233, 1) 0%,
+    rgb(161, 98, 239) 45%,
+    rgba(134, 60, 173, 1) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   background-size: 200% 500%;
   animation: gradient 5s ease infinite;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: end;
   margin-right: 7rem;
   margin-top: 2rem;
   gap: 15px;
 }
-nav i{
-  color: var(--cor1)
-}
- 
-nav i:hover{
-  filter: drop-shadow(1px 2px 10px white);  
+nav i {
+  color: var(--cor1);
 }
 
-.titulo{
+nav i:hover {
+  filter: drop-shadow(1px 2px 10px white);
+}
+
+.titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   /* margin-bottom: 20rem; */
 }
 
-.digna{
+.digna {
   display: inline-block;
   padding-top: 10rem;
   text-align: center;
   font-weight: 100;
 }
- 
-.digna h1{
+
+.digna h1 {
   display: inline-block;
   font-size: 9em;
-  padding:0;
-  margin:0; 
-  color:var(--cor1);
+  padding: 0;
+  margin: 0;
+  color: var(--cor1);
 }
- 
-.digna span{
+
+.digna span {
   display: inline-block;
 }
 
-.digna h2{
+.digna h2 {
   display: inline-block;
   font-size: 2.5rem;
-  padding:0;
-  margin:0;
-  color:var(--cor1);
-  
+  padding: 0;
+  margin: 0;
+  color: var(--cor1);
 }
 
-#e1{
-  font-size:9em;
-  color:var(--cor1);
+#e1 {
+  font-size: 9em;
+  color: var(--cor1);
 }
- 
-#e2{
+
+#e2 {
   display: inline-block;
   font-size: 2.5rem;
   margin-left: 20px;
-  color:var(--cor1);
+  color: var(--cor1);
   opacity: 0;
 }
 
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,38 +121,41 @@ nav i:hover{
 }
 
 /* SOBRE MIM */
-.eu{
+.eu {
   width: 71.5%;
   text-align: justify;
   color: var(--cor1);
   margin-top: 15rem;
 }
 
-.conteudo{
+.conteudo {
   padding: 1.8rem;
   font-weight: 200;
   font-size: 2rem;
 }
 
-.conteudo h2{
+.conteudo h2 {
   text-align: center;
   text-shadow: 1px 2px 3px white;
-  margin:0;
+  margin: 0;
 }
 
-.conteudo strong{
+.conteudo strong {
   font-weight: 700;
 }
 
-.conteudo p{
+.conteudo p {
   font-size: 25px;
   text-align: center;
 }
- 
+
 .border {
   height: fit-content;
   width: fit-content;
-  background: linear-gradient(90deg, var(--borda-animada1) 50%, transparent 50%), linear-gradient(90deg, var(--borda-animada3) 50%, transparent 50%), linear-gradient(0deg, var(--borda-animada4) 50%, transparent 50%), linear-gradient(0deg, var(--borda-animada2) 50%, transparent 50%);
+  background: linear-gradient(90deg, var(--borda-animada1) 50%, transparent 50%),
+    linear-gradient(90deg, var(--borda-animada3) 50%, transparent 50%),
+    linear-gradient(0deg, var(--borda-animada4) 50%, transparent 50%),
+    linear-gradient(0deg, var(--borda-animada2) 50%, transparent 50%);
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
   background-position: 0px 0px, 100% 100%, 0px 100%, 100% 0px;
@@ -163,48 +170,48 @@ nav i:hover{
   100% {
     background-position: 15rem 0, 40rem 100%, 0 0, 100% 15rem;
   }
-} 
- 
+}
+
 /* PROJETO */
-.projetos{
+.projetos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 12.5rem 0 3rem;
 }
- 
-.card--projetos{
+
+.card--projetos {
   text-align: center;
   color: var(--cor1);
   background-color: rgba(133, 60, 173, 0.277);
   border-radius: 4%;
 }
- 
-.card--projetos h2 a{
+
+.card--projetos h2 a {
   text-decoration: none;
   color: inherit;
 }
 
-.card--projetos h2:hover{
+.card--projetos h2:hover {
   text-shadow: 1px 2px 20px white;
 }
 
-.descricao{
+.descricao {
   font-weight: 200;
-  padding: 0 10% 1rem
+  padding: 0 10% 1rem;
 }
 
-figure{
+figure {
   display: flex;
   position: relative;
 }
 
-figure img{
+figure img {
   width: 100%;
   border-radius: 40px;
 }
- 
-figcaption{
+
+figcaption {
   margin-top: 1rem;
 }
 
@@ -218,33 +225,33 @@ figcaption{
   border-radius: 40px;
   display: grid;
   place-content: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-figure:hover .linguagens{
+figure:hover .linguagens {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
-.linguagens ul{
+.linguagens ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  gap: .7rem;
+  gap: 0.7rem;
   justify-content: center;
 }
- 
-.linguagens p{
+
+.linguagens p {
   color: white;
   font-weight: 700;
   font-size: 20px;
   text-shadow: 1px 2px 20px white;
 }
 
-.linguagens ul li{
+.linguagens ul li {
   padding: 10px 20px;
   background-color: rgba(133, 60, 173);
   border: dashed 2px #fff;
@@ -252,14 +259,14 @@ figure:hover .linguagens{
 }
 
 /* CONTATO */
-.contato{ 
+.contato {
   display: grid;
   place-content: center;
-  position: fixed; 
-  bottom: 1rem; 
-  left: 0rem; 
-  width: 9.2rem; 
-  height: 45px; 
+  position: fixed;
+  bottom: 1rem;
+  left: 0rem;
+  width: 9.2rem;
+  height: 45px;
   font-size: 20px;
   font-weight: bolder;
   border-radius: 30px;
@@ -269,99 +276,101 @@ figure:hover .linguagens{
   box-shadow: 2px 2px 5px rgba(79, 79, 79, 0.5);
 }
 
-.email{
+.email {
   text-decoration: none;
   color: rgba(133, 60, 173);
 }
 
-.email span{
+.email span {
   display: inline-block;
 }
 
-.coracao{
-  animation: batida .75s alternate infinite;
+.coracao {
+  animation: batida 0.75s alternate infinite;
 }
 
-@keyframes batida{
-  0%{ transform: scale(1) }
-  50%{ transform: scale(1.3) }
-  100%{ transform: scale(.9) }
+@keyframes batida {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 
-@media (max-width: 1024px){ 
-  nav{
+@media (max-width: 1024px) {
+  nav {
     justify-content: center;
     margin-right: 0;
-    
-  } 
+  }
 
-  .eu{
+  .eu {
     width: 90%;
   }
 
-  .projetos{
-    grid-template-columns: 1fr ;
+  .projetos {
+    grid-template-columns: 1fr;
     padding: 0.7rem;
     gap: 4em;
   }
-  .descricao{
+  .descricao {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     font-size: 25px;
     line-height: 2.5rem;
   }
 
-  .card--projetos h2{
+  .card--projetos h2 {
     font-size: 3rem;
   }
-  
-  
 }
-@media (max-width: 768px){
-  .digna h1{
+@media (max-width: 768px) {
+  .digna h1 {
     font-size: 3rem;
   }
-  .digna h2{
+  .digna h2 {
     font-size: 1.2rem;
     margin-left: 0;
   }
-  #e1{
+  #e1 {
     font-size: 2rem;
   }
-  #e2{
-    
+  #e2 {
     font-size: 1.5rem;
   }
 
-  .border{
+  .border {
     padding: 0;
   }
-  .eu h2{
+  .eu h2 {
     font-size: 2rem;
   }
-  .eu p{
+  .eu p {
     font-size: 1.2rem;
   }
-  .descricao{
+  .descricao {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     font-size: 1.3rem;
     line-height: 1.4rem;
   }
-  .card--projetos h2{
+  .card--projetos h2 {
     font-size: 1.8rem;
   }
 
-  figure img{
+  figure img {
     border-radius: 0px;
   }
-  .linguagens{
+  .linguagens {
     border-radius: 0;
   }
 
-  .contato{
-    width: 15rem; 
-    height: 3.5rem; 
+  .contato {
+    width: 15rem;
+    height: 3.5rem;
     margin: 0 auto;
     position: unset;
   }
